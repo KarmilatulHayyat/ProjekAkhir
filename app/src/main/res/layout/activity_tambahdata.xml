@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/milk">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:text = "@string/inputnama" />
+            <EditText
+                android:id = "@+id/nama"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:hint="@string/nama" />
+            <TextView
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:text = "@string/al" />
+            <EditText
+                android:id = "@+id/alanda"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:hint="@string/alanda" />
+            <TextView
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:text = "@string/tanggalgaji" />
+            <EditText
+                android:id = "@+id/tglgj"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:hint="@string/tglgj" />
+            <TextView
+                android:layout_marginTop = "15dp"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:text = "@string/jk" />
+            <CheckBox
+                android:id="@+id/laki"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/laki" />
+            <CheckBox
+                android:id = "@+id/perem"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:text = "@string/perem" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/jmlhr"
+                android:textSize="20dp"/>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center">
+
+                <RadioGroup
+                    android:id = "@+id/rgGolongan"
+                    android:layout_width = "fill_parent"
+                    android:layout_height= "wrap_content" >
+                    <RadioButton
+                        android:id = "@+id/rbGolongan1"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr1" />
+                    <RadioButton
+                        android:id = "@+id/rbGolongan2"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr2" />
+                    <RadioButton
+                        android:id = "@+id/rbGolongan3"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr3"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan4"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr4"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan5"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr5"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan6"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr6"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan7"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr7"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan8"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr8"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan9"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr9"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan10"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr10"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan11"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr11"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan12"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr12"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan13"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr13"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan14"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr14"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan15"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr15"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan16"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr16"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan17"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr17"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan18"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr18"/>
+
+                    <RadioButton
+                        android:id = "@+id/rbGolongan19"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr19"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan20"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr20"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan21"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr21"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan22"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr22"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan23"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr23"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan24"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr24"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan25"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr25"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan26"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr26"/>
+                    <RadioButton
+                        android:id = "@+id/rbGolongan27"
+                        android:layout_width = "fill_parent"
+                        android:layout_height= "wrap_content"
+                        android:text = "@string/hr27"/>
+
+                </RadioGroup>
+            </TableRow>
+            <Button
+                android:layout_width="182dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:onClick="hitung"
+                android:text="@string/hj"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id = "@+id/outputNama"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:gravity = "center"
+                android:textSize = "20sp"
+                android:text = "" />
+            <TextView
+                android:id = "@+id/outputGaji"
+                android:layout_width = "fill_parent"
+                android:layout_height= "wrap_content"
+                android:gravity = "center"
+                android:textSize = "35sp"
+                android:text = "" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
