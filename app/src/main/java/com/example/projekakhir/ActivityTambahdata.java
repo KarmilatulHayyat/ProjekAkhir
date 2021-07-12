@@ -1,44 +1,47 @@
 package com.example.projekakhir;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.EditText;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
+import android.app.Activity;            //
+import android.os.Bundle;               //
+import android.view.View;               //
+import android.widget.Button;           //untuk semua import widget, berfungsi untuk memamnggil dan menampilkan widget yg dibutuhkan.
+import android.widget.CheckBox;         //
+import android.widget.EditText;         //
+import android.widget.RadioButton;      //
+import android.widget.RadioGroup;       //
+import android.widget.TextView;         //
 
-public class ActivityTambahdata extends Activity {
-    int gajiST, gajiPerHari, gajiawal;
-    RadioButton jm1, jm2, jm3, jm4;
-    RadioGroup harikerja;
-    Button hitung;
-    CheckBox jeke;
+public class ActivityTambahdata extends Activity {      //Sub Class yang bernama ActivityTambahData  dengan keyword extends ,yang digunakan untuk
+    // mewariskan sifat-sifat yang ada di dalam Activity
+    int a=1;
+    int gajiST, gajiPerHari, gajiawal;      //inisiali variabel yang dibutuhkan.
+    RadioButton jm1, jm2, jm3, jm4;         //Radio buttton merupakan elemen layout yang digunakan untuk menginput data yang berupa pilihan yg hanya satu aja yg bisa dipilih.
+    RadioGroup harikerja;                    //Radio group merupakan elemen layout yang digunakan untuk menginput data yang bisa dipilih bnyk.
+    Button hitung; //elemen layout button
+    CheckBox jeke; //elemen layout check box yang hanya bisa dipilih 1 komponen berupa jenis kelamin.
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);                 //penjelasan sama seperti di class MainActivity.
         setContentView(R.layout.activity_tambahdata);
     }
 
-    public void hitung(View v) {
-        EditText nama = (EditText) findViewById(R.id.nama);
-        TextView outputNama = (TextView) findViewById(R.id.outputNama);
-        String name = nama.getText().toString();
-        outputNama.setText("Total Gaji " + name);
-        jeke = (CheckBox) findViewById(R.id.laki);
-        jeke = (CheckBox) findViewById(R.id.perem);
-        if (jeke.isChecked()) {
-            gajiawal = 75000;
-            gajiST = 1500000;
+    public void hitung(View v) {                                            //method untuk menghitung gaji
+        EditText nama = (EditText) findViewById(R.id.nama);                 //mebuat variabel dengan mengambil view berdasarkan id nama
+        TextView outputNama = (TextView) findViewById(R.id.outputNama);     //--
+        String name = nama.getText().toString();                            //variabel untuk mengambil text dari line 18.
+        outputNama.setText("Total Gaji " + name);                           //menampilkan total gaji berdasarkan nama.
+        jeke = (CheckBox) findViewById(R.id.laki);                           //membuat variabel untuk mengambil view check box
+        jeke = (CheckBox) findViewById(R.id.perem);                          //--
+        if (jeke.isChecked()) {                                             //jika dicek, gaji awal 75000, dan gaji setelah tambah.
+            gajiawal = 75000;                                               //--
+            gajiST = 1500000;                                               //
         }
 
-        harikerja = (RadioGroup) findViewById(R.id.rgGolongan);
-        int jm = harikerja.getCheckedRadioButtonId();
+        harikerja = (RadioGroup) findViewById(R.id.rgGolongan);     //variabel untuk mengambil view radio group.
+        int jm = harikerja.getCheckedRadioButtonId();               //membuat variebel untuk mengambil id radio buuton
         gajiawal = 75000;
-        if (jm == R.id.rbGolongan1) {
+        if (jm == R.id.rbGolongan1) {                          //membuat pengkondisian dimana jika jam kerja sehari akan digaji 75000,
+                                                        //dan jika ditambkan untuk beberapa hari akan bertambah total gaji sesuai dengan id radiogroup yang dipilih.
             gajiPerHari = gajiawal - 75000;
         } else if (jm == R.id.rbGolongan2) {
             gajiPerHari = gajiawal * 1;
@@ -95,9 +98,9 @@ public class ActivityTambahdata extends Activity {
             gajiPerHari = gajiawal * 25;
         }
 
-        int totalGaji = gajiawal + gajiPerHari;
-        int totalGajiplusbonus = gajiST + gajiPerHari;
-        TextView total = (TextView) findViewById(R.id.outputGaji);
+        int totalGaji = gajiawal + gajiPerHari;                         //membuat variabel total gaji
+        int totalGajiplusbonus = gajiST + gajiPerHari;                  //membuat variabel totalgaji+bonus
+        TextView total = (TextView) findViewById(R.id.outputGaji);      //menampilkan total gaji di textview
         total.setText(String.valueOf(totalGaji));
     }
 }
